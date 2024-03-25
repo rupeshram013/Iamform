@@ -1,17 +1,17 @@
 from django.shortcuts import render
+
 from django.http import request
 # Create your views here.
 
 def home(request):
 
-    return "home"
+    return render(request, "index.html")
 
 
 def login(request):
 
-    return "login"
+    return render(request, "pages/login.html")
 
 
 def register(request):
-
-    return "Register"
+    return render(request, "pages/register.html")

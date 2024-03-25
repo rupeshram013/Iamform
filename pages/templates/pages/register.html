@@ -1,1 +1,26 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    
+    <form method="post">
+        
+        {% csrf_token %}
+        <H1>Register</H1>
+        <br>
+        <input type="text" name="username" id="username"><br>
+        <input type="email" name="usermail" id="usermail"><br>
+        <input type="password" name="userpass" id="userpass"><br>
+        <input type="password" name="altuserpass" id="altuserpass"><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+</body>
+</html>
