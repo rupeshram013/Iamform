@@ -14,4 +14,6 @@ def login(request):
 
 
 def register(request):
+    data = request.POST
+    print(data)
     return render(request, "pages/register.html")
